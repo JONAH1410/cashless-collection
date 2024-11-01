@@ -1,0 +1,40 @@
+{
+  "project": "RevenueCollectionApp",
+  "platforms": {
+    "android": {
+      "package": "com.revenuecollectionapp",
+      "versionCode": 1,
+      "minSdkVersion": 21,
+      "targetSdkVersion": 31,
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "ios": {
+      "bundleId": "com.revenuecollectionapp",
+      "buildNumber": "1.0.0",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        },
+        "UIBackgroundModes": [
+          "processing",
+          "fetch",
+          "remote-notification"
+        ]
+      }
+    }
+  },
+  "assets": [
+    "./App/Assets/fonts/",
+    "./App/Assets/images/"
+  ],
+  "modules": [
+    "./App/Components/",
+    "./App/Screens/"
+  ]
+}
